@@ -1,42 +1,19 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# User-specific files - Ignore all files ending in ".suo"
+*.suo
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Mono auto generated files - Ignore all files starting with "mono_crash."
+mono_crash.*
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# Build results - Ignore all files in these folders found at any folder depth
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Root config folder - Ignore this directory at the root due to leading slash
+# Removing the slash would ignore "config" directories at all depths 
+/config
 
-# Sample payload files #
-#####################
-# These files are used for testing and should not be included in the repository
-.temp/**
+# Ignore intermediate JS build files produced during TypeScript build at any 
+# folder depth under /Web/TypeScript. This won't ignore JS files elsewhere. 
+/Web/TypeScript/**/*.js
